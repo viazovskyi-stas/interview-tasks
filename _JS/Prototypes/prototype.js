@@ -20,3 +20,22 @@ Person.prototype.getTodo = function () {
 const z = new Person()
 
 console.log(z.getTodo())
+
+
+// TASK
+function Transport() {
+}
+
+Transport.prototype.energy = 40;
+
+
+const a = [
+    // to add special use Object create for special prototype or Object.setPrototypeOf
+  new Transport(),
+  new Transport(),
+  new Transport(),
+]
+
+Transport.prototype.energy = 86;
+
+a.forEach(el => console.log(el.energy))
