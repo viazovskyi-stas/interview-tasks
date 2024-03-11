@@ -7,6 +7,7 @@ const promise = new Promise(resolve => {
   console.log('promise')
   setTimeout(() => console.log('timeout in promise fun'), 0)
   resolve('promise resolve')
+  console.log('111')
 })
 
 const promise2 = new Promise(resolve => {

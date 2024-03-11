@@ -1,5 +1,5 @@
 const ex = function (t1, t2, t3, ...rest) {
-  // console.log({context: this })
+  console.log({context: this })
   console.log(...arguments, this, { sum: t1 + t2 + t3 })
 }
 // interview task
@@ -10,7 +10,7 @@ const ex = function (t1, t2, t3, ...rest) {
   BIND: binds the this value, returns a new function, and allows you to pass in a list of arguments.
 */
 const fx = ex.bind({test: 123}, 5, 2).bind({lol: 123}, 1, 1) // creates new fun ex(t3) and first and second is [5, 2]
-// console.log(fx)
+console.log(fx)
 // if first param is null context on global obj
 
 // Test outputs

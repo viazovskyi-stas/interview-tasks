@@ -11,5 +11,8 @@
   "license": "ISC",
   "devDependencies": {
     "prettier": "2.3.2"
+  },
+  "dependencies": {
+    "@react-pdf/styled-components": "^1.4.0"
   }
 }

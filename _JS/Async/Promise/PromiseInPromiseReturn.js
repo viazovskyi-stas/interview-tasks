@@ -19,3 +19,5 @@ function waitForResults(fetch1, fetch2) {
       fetch2.then((res) => [...result, res])
     )
 }
+
+console.log(waitForResults(myPromise, myPromise))

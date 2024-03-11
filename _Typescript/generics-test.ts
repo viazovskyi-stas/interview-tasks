@@ -18,7 +18,7 @@ class Widget<T> {
   public value: T
 }
 
-class ArrayWidget<T> extends Widget<Array<T>> {
+class ArrayWidget<T > extends Widget<Array<T>> {
   setValue() {
     let v = new Array<T>()
     this.value = v // ok

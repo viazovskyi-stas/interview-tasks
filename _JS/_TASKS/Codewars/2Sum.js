@@ -39,3 +39,4 @@ function pareSum1(arr, sumNumber) {
 
 console.log(pareSum([4, 9, 7, 3, 5], 8))
 console.log(pareSum1([4, 9, 7, 3, 5], 8))
+

@@ -8,6 +8,7 @@ const test2 = { x: 3 }
 
 console.log(test2.__proto__)
 console.log(test.hasOwnProperty('x'))
+console.log('x' in test)
 console.log(test2.hasOwnProperty('x'))
 
 function Person() {

@@ -1,6 +1,6 @@
 //  find the sum of maximum of the sub arrays, in optimal solution
 const maxSequence = function (arr) {
-  let gMax = 0
+  let gMax = -Infinity
   let cMax = 0
   for (let current of arr) {
     cMax += current

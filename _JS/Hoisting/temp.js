@@ -6,7 +6,7 @@
 function test() {
   var t = 'h'
   {
-    t = 's'
+    // t = 's'
     let t = 'z'
     console.log(t)
   }
