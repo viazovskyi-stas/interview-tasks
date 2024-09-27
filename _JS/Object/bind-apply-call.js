@@ -36,7 +36,7 @@ fx(2, 3, 3)
 
 const obj = {
   data: 11,
-  fnc() {
+  fnc: () => {
     return this.data
   },
 }
@@ -45,3 +45,5 @@ const obj = {
   // need to add bind
   // console.log(fn());
 })(obj.fnc)
+
+console.log('-=--', obj.fnc())

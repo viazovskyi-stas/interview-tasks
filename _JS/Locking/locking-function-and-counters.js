@@ -7,14 +7,14 @@
 // })()
 
 function inc() {
-  inc.counter = inc.counter || 0
-  inc.counter++
-  console.log(inc.counter)
+  this.counter = this.counter || 0
+  this.counter++
+  console.log(this.counter)
 }
 
 // closure/locking task
-// inc() // 1
-// inc() // 2
+inc() // 1
+inc() // 2
 
 // test2
 function counter() {
@@ -50,7 +50,7 @@ function sum(n) {
   return b => sum(n + b)
 }
 
-// console.log(sum(1)(5)(10))
+console.log(sum(1)(5)(10))
 
 // sum(1)(2); // 1 3
 // sum(1)(5)(10); // 1 6 16
