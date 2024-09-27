@@ -1,1 +1,1 @@
-# js-tasks-and-tests
+# Interview tasks
