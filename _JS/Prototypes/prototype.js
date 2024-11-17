@@ -14,6 +14,7 @@ console.log(test2.hasOwnProperty('x'))
 function Person() {
   return 2
 }
+
 Person.prototype.getTodo = function () {
   return 'zzz'
 }

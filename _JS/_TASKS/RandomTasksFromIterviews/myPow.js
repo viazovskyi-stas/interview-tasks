@@ -8,7 +8,7 @@ var myPow = function (x, n) {
     for (let i = 0; i < Math.abs(n) - 1; i++) {
         multiplier *= x
     }
-    console.log(Math.sin(n) < 0, multiplier)
+    // console.log(Math.sin(n) < 0, multiplier)
     return n < 0 ? 1 / multiplier : multiplier
 }
-console.log(myPow(2, 1.5))
+console.log(myPow(2, -2))

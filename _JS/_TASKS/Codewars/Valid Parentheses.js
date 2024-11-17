@@ -1,8 +1,4 @@
-/**
- * @param {string} s
- * @return {boolean}
- */
-var isValid = function (s) {
+function isValid(s) {
   let stack = []
   let brackets = {
     ')': '(',
@@ -13,7 +9,7 @@ var isValid = function (s) {
   for (let i = 0; i < s.length; i++) {
     const current = s[i]
     if (isClosetBracket(current)) {
-      console.log(brackets[current], stack)
+      // console.log(brackets[current], stack)
       if (brackets[current] !== stack.pop()) return false
     } else {
       stack.push(current)
@@ -27,4 +23,4 @@ function isClosetBracket(ch) {
   return [')', '}', ']'].indexOf(ch) > -1
 }
 
-console.log(isValid('()[]{}'))
+console.log(isValid('[(){}'))
